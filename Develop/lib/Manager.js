@@ -18,7 +18,7 @@ class Manager extends Employee {
         return this.email
     }
 
-    getOfficeNumber(){
+    getOffice(){
         return this.officeNumber
     }
 
