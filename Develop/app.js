@@ -10,6 +10,60 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./lib/htmlRenderer");
 
+const questions = [
+    {
+        type: "checkbox",
+        name: "Select an employee type you wish to enter:",
+        message: "employee",
+        choices: [
+            "Manager",
+            "Intern",
+            "Engineer",
+        ]
+    },
+
+    {
+        type: "input",
+        name: "name",
+        message: "What is the this employee's name?"
+    },
+    {
+        type: "input",
+        name: "id",
+        message: "What is this employee's id?"
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "What is this employee's email?"
+    },
+]
+console.clear();
+
+inquirer
+    .prompt(questions).then(response => {
+
+    fs.appendFileSync("./output/team.html", ("##" + response.name) + '\n', function(err) {
+        if (err) {
+            return console.log(err);
+        }
+        console.log("Success!");
+    });
+
+    fs.appendFileSync("./output/team.html", ("## Employee ID" + '\n' + response.id) + '\n', function(err) {
+        if (err) {
+            return console.log(err);
+        }
+        console.log("Success!");
+    });
+
+    fs.appendFileSync("./output/team.html", ("## Email Address"  + '\n' + response.email) + '\n', function(err) {
+        if (err) {
+            return console.log(err);
+        }
+        console.log("Success!");
+    });
+});
 
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
