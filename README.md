@@ -14,4 +14,4 @@ The application will prompt user for information. Prior to this, create the outp
 * [Github](https://github.com/)
 
 ## Deployed Link
-[Work Day Scheduler](https://fevia.github.io/Work-Day-Scheduler/)
+[Team Generator](https://github.com/fevia/employee-summary)
