@@ -31,5 +31,5 @@ class Engineer extends Employee {
 
 module.exports = Engineer;
 
-var test = new Engineer("flory", 234, "flory@gmail.com", "fevia")
-console.log(test);
+// var test = new Engineer("flory", 234, "flory@gmail.com", "fevia")
+// console.log(test);

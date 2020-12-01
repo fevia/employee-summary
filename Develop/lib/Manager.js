@@ -30,5 +30,5 @@ class Manager extends Employee {
 
 module.exports = Manager;
 
-var test = new Manager("flory", 234, "flory@gmail.com", 154)
-console.log(test);
+// var test = new Manager("flory", 234, "flory@gmail.com", 154)
+// console.log(test);

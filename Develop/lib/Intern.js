@@ -31,5 +31,5 @@ class Intern extends Employee {
 
 module.exports = Intern;
 
-var test = new Intern("flory", 234, "flory@gmail.com", "DePaul")
-console.log(test);
+// var test = new Intern("flory", 234, "flory@gmail.com", "DePaul")
+// console.log(test);
